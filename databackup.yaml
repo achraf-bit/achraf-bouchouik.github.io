@@ -1,0 +1,97 @@
+profile:
+  name: "Achraf Bouchouik"
+  title: "Expert Cloud and DevOps Engineer / Site Reliability Engineer"
+  bio: "Je développe des systèmes fiables et évolutifs, et j'accorde une grande importance à une architecture propre, à l'expérience des développeurs et à la mise en production de solutions qui font la différence. Plus de 4 ans d'expérience dans les domaines du backend, des infrastructures cloud et des systèmes distribués."
+  photo: "assets/images/profile.jpg"
+  links:
+    github: "https://github.com/pipo9"
+    linkedin: "https://www.linkedin.com/in/achraf-bouchouik/"
+    email: "achraf.bouchouik@gmail.com"
+
+experiences:
+  - company: "Deloitte"
+    role: "Senior Cloud Engineer"
+    period: "2023 – Present"
+    location: "Casaablanca, Morocco"
+    description: "- Dirigé le développement d'une plateforme visant à rationaliser les opérations sur Azure et AWS. En suivant un modèle « hub-and-spoke », j'ai automatisé les processus et optimisé les FinOps, en mettant en place des tableaux de bord et des interfaces conviviaux, en réduisant au minimum les interventions manuelles et en adoptant une approche « low-code ».
+    - Dirigé la conception de l'architecture d'une application JavaScript serverless évolutive, en garantissant des performances optimales et une rentabilité maximale. Adoption d'une approche « infrastructure as code » pour rationaliser le déploiement et la maintenance des flux de travail des applications."
+    image: "assets/images/exp-stripe.jpg"
+    tags: ["Terraform", "CI/CD", "Node.js", "AWS", "Azure", "Git"]
+
+  - company: "MyTower"
+    role: "DevOps Engineer"
+    period: "2022 – 2023"
+    location: "Casablanca, Morocco"
+    description: "En tant que membre clé de MytTower Maroc, j'ai participé à la conception, au développement et au lancement d'une solution SaaS avancée basée sur Docker et s'appuyant sur une architecture microservices, axée sur les clusters Kubernetes et l'automatisation des ressources, offrant une haute disponibilité à chacun de nos clients."
+    image: "assets/images/exp-datadog.jpg"
+    tags: ["Java", "Kubernetes", "Angular", "Jenkins", "Docker"]
+
+  - company: "Esport Academy Corporation"
+    role: "Backend Developer / DevOps Engineer"
+    period: "2020 – 2021"
+    location: "Remote"
+    description: "Mise en place d'une plateforme de streaming « full-stack » destinée aux gamers. Promotion des pratiques de développement piloté par les tests et de livraison continue."
+    image: "assets/images/exp-tw.jpg"
+    tags: ["Node.js", "Socket.io", "CI/CD", "Docker", "websockets", "MongoDB", "S3"]
+
+projects:
+
+  - name: "Detafour"
+    description: "Journal économique numérique marocain spécialisé dans la diffusion d'actualités économiques au Maroc et dans le monde"
+    image: "assets/images/proj-detafour.jpg"
+    link: "https://detafour.com/"
+    tags: ["Node.js", "MongoDB", "Git", "Server/VM"]
+
+  - name: "Doctory"
+    description: "Plateforme de prise de rendez-vous en ligne pour les patients et les médecins, permettant aux patients de prendre des prelevements a domicile avec des professionnels de santé qualifiés."
+    image: "assets/images/proj-doctory.jpg"
+    link:  ""
+    tags: ["Dart", "Node.js", "Git", "Firebase", "Google Maps/API"]
+
+  - name: "SchoolManager"
+    description: "Plateforme de gestion scolaire pour les écoles et les établissements d'enseignement, permettant aux enseignants, aux élèves et aux parents de gérer les cours, les notes et les absences, ainsi que gerer les emplois du temps et les examens et les paiements."
+    image: "assets/images/proj-schoolmanager.jpg"
+    link:  ""
+    tags: ["Dart", "Node.js", "Git", "Firebase", "Google Maps/API"]
+
+
+  - name: "Automator"
+    description: "Plateforme d'automatisation de tâches pour les entreprises, permettant aux utilisateurs de créer des flux de travail automatisés pour les tâches répétitives et chronophages, en utilisant des intégrations avec des applications tierces et des API."
+    image: "assets/images/proj-portkey.jpg"
+    link:  ""
+    tags: ["N8N", "ChatGPT", "APIs", "Google Apps"]
+
+
+  - name: "Kirae"
+    description: "Platforme de gestion de location des biens immobiliers, permettant aux propriétaires de gérer leurs biens, aux locataires de payer(Tierce) leurs loyers et aux agences immobilières de gérer leurs clients et leurs biens."
+    image: "assets/images/proj-logpipe.jpg"
+    link:  ""
+    tags: ["React", "Node.js", "MongoDB", "tailwindcss"]
+
+  - name: "Selfmanager"
+    description: "Plateforme de gestion d'infastructure pour les entreprises, permettant aux utilisateurs de gérer leurs serveurs et resources cloud."
+    image: "assets/images/proj-portkey.jpg"
+    link:  ""
+    tags: ["Node.js", "Angular", "Git", "Serverless", "AWS"]
+
+
+  - name: "Animeler"
+    description: "Plateforme de streaming d'animes, permettant aux utilisateurs de regarder des animes en ligne et de suivre leurs séries préférées."
+    image: "assets/images/proj-resume.jpg"
+    link:  ""
+    tags: ["Laravel", "PHP", "git", "MySQL", "Bootstrap"]
+
+  - name: "Notelik"
+    description: "Plateforme de gestion de notes et de documents pour les étudiants, permettant aux utilisateurs de créer, organiser et partager leurs notes et documents avec d'autres étudiants."
+    image: "assets/images/proj-portkey.jpg"
+    link: ""
+    tags: ["Dart", "Node.js", "Git", "Firebase", "sqlite"]
+
+
+education:
+  - institution: "Institute of Post and Telecommunication (Rabat, Morocco)"
+    degree: "Cloud Computing and Distributed Systems Engineering"
+    period: "2019 – 2022"
+    description: "Focus on systems programming and distributed computing. Teaching assistant for CS 241 (System Programming) for two semesters."
+    image: "assets/images/edu-uiuc.jpg"
+  

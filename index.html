@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Personal portfolio" />
+
+  <!-- Compiled Tailwind -->
+  <link rel="stylesheet" href="dist/output.css" />
+
+  <!-- Inter + JetBrains Mono from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- js-yaml via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+</head>
+<body class="min-h-screen">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────── -->
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur border-b border-stone-200">
+    <nav class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between" aria-label="Main navigation">
+      <span id="nav-name" class="font-semibold text-stone-900 text-sm tracking-tight"></span>
+      <ul class="flex gap-5 text-sm font-medium text-stone-500" role="list">
+        <li><a href="#about"      class="hover:text-accent transition-colors">About</a></li>
+        <li><a href="#experience" class="hover:text-accent transition-colors">Experience</a></li>
+        <li><a href="#projects"   class="hover:text-accent transition-colors">Projects</a></li>
+        <li><a href="#education"  class="hover:text-accent transition-colors">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO / ABOUT ─────────────────────────────────────────────── -->
+    <section id="about" class="max-w-5xl mx-auto px-4 py-16 md:py-24">
+      <div class="flex flex-col gap-8 md:flex-row md:items-center md:gap-14">
+
+        <!-- Profile photo -->
+        <div class="flex-shrink-0 reveal">
+          <img
+            id="profile-photo"
+            src=""
+            alt="Profile photo"
+            class="w-28 h-28 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-stone-200 bg-stone-200"
+            onerror="this.src='https://placehold.co/160x160/e7e5e4/78716c?text=Photo'"
+          />
+        </div>
+
+        <!-- Text -->
+        <div class="reveal">
+          <p class="text-sm font-mono text-accent mb-2" id="profile-title"></p>
+          <h1 class="text-3xl md:text-4xl font-bold text-stone-900 mb-4" id="profile-name"></h1>
+          <p class="text-stone-600 leading-relaxed max-w-xl mb-6" id="profile-bio"></p>
+
+          <!-- Social links -->
+          <div id="profile-links" class="flex flex-wrap gap-3"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ───────────────────────────────────────────────── -->
+    <section id="experience" class="bg-stone-100 py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-stone-900 mb-10 reveal">Experience</h2>
+        <div id="experience-list" class="flex flex-col gap-6"></div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─────────────────────────────────────────────────── -->
+    <section id="projects" class="py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-stone-900 mb-10 reveal">Projects</h2>
+        <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-5"></div>
+      </div>
+    </section>
+
+    <!-- ─── EDUCATION ────────────────────────────────────────────────── -->
+    <section id="education" class="bg-stone-100 py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-stone-900 mb-10 reveal">Education</h2>
+        <div id="education-list" class="flex flex-col gap-5"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER / CONTACT ─────────────────────────────────────────── -->
+  <footer id="contact" class="border-t border-stone-200 py-10">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-stone-500">
+      <div id="footer-links" class="flex gap-5"></div>
+      <p id="footer-copy"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
