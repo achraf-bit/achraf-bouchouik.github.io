@@ -238,3 +238,39 @@ async function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
+/* ── Burger menu ─────────────────────────────────────────────────────── */
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle    = document.getElementById("nav-toggle");
+  const menu      = document.getElementById("nav-mobile");
+  const iconOpen  = document.getElementById("icon-open");
+  const iconClose = document.getElementById("icon-close");
+
+  function openMenu() {
+    menu.classList.remove("hidden");
+    menu.classList.add("flex");
+    iconOpen.classList.add("hidden");
+    iconClose.classList.remove("hidden");
+    toggle.setAttribute("aria-expanded", "true");
+  }
+
+  function closeMenu() {
+    menu.classList.add("hidden");
+    menu.classList.remove("flex");
+    iconOpen.classList.remove("hidden");
+    iconClose.classList.add("hidden");
+    toggle.setAttribute("aria-expanded", "false");
+  }
+
+  toggle.addEventListener("click", () => {
+    menu.classList.contains("hidden") ? openMenu() : closeMenu();
+  });
+
+  // Close when a link is tapped
+  menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+
+  // Reset if viewport grows past 700px
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 700) closeMenu();
+  });
+});

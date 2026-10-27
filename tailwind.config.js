@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./script.js"],
   theme: {
     extend: {
+      screens: {
+        nav: "700px",
+      },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
